@@ -1,0 +1,214 @@
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@300;400;500&display=swap');
+
+*{box-sizing:border-box;margin:0;padding:0;}
+.cv{font-family:'DM Sans',sans-serif;font-weight:400;color:var(--color-text-primary);max-width:860px;margin:0 auto;padding:2rem 1rem;}
+.cv-grid{display:grid;grid-template-columns:260px 1fr;gap:0;min-height:900px;border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);overflow:hidden;}
+.sidebar{background:var(--color-background-secondary);padding:2rem 1.5rem;display:flex;flex-direction:column;gap:1.75rem;}
+.main{padding:2.5rem 2rem;display:flex;flex-direction:column;gap:2rem;}
+.name-block{margin-bottom:0.5rem;}
+.name{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600;letter-spacing:0.02em;line-height:1.2;color:var(--color-text-primary);}
+.title{font-size:10px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--color-text-secondary);margin-top:6px;}
+.divider{width:36px;height:2px;background:var(--color-border-primary);margin:12px 0;}
+.sec-label{font-size:10px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:var(--color-text-tertiary);margin-bottom:10px;}
+.contact-item{display:flex;align-items:flex-start;gap:8px;margin-bottom:8px;font-size:12.5px;color:var(--color-text-secondary);}
+.contact-item i{font-size:14px;margin-top:2px;color:var(--color-text-tertiary);flex-shrink:0;}
+.contact-item a{color:var(--color-text-info);text-decoration:none;word-break:break-all;font-size:12px;}
+.lang-item{margin-bottom:7px;}
+.lang-name{font-size:12.5px;font-weight:500;color:var(--color-text-primary);margin-bottom:4px;}
+.lang-bar{height:3px;background:var(--color-border-tertiary);border-radius:2px;overflow:hidden;}
+.lang-fill{height:3px;border-radius:2px;background:#5F5E5A;}
+.lang-fill.native{width:100%;}
+.lang-fill.en{width:70%;}
+.lang-level{font-size:10.5px;color:var(--color-text-tertiary);margin-top:3px;}
+.skill-group{margin-bottom:0.75rem;}
+.skill-group-name{font-size:10.5px;font-weight:500;color:var(--color-text-tertiary);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:5px;}
+.skill-tags{display:flex;flex-wrap:wrap;gap:4px;}
+.tag{font-size:11px;padding:3px 8px;border-radius:3px;background:var(--color-background-primary);border:0.5px solid var(--color-border-secondary);color:var(--color-text-secondary);}
+.interest-list{display:flex;flex-direction:column;gap:4px;}
+.interest-item{font-size:12.5px;color:var(--color-text-secondary);display:flex;align-items:center;gap:6px;}
+.interest-item i{font-size:14px;color:var(--color-text-tertiary);}
+.main-section-title{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:var(--color-text-primary);display:flex;align-items:center;gap:10px;margin-bottom:1rem;}
+.main-section-title::after{content:'';flex:1;height:0.5px;background:var(--color-border-tertiary);}
+.exp-item{display:grid;grid-template-columns:100px 1fr;gap:0 1.25rem;margin-bottom:1.5rem;}
+.exp-date{font-size:11px;color:var(--color-text-tertiary);line-height:1.5;padding-top:2px;text-align:right;}
+.exp-body{border-left:2px solid var(--color-border-tertiary);padding-left:1rem;position:relative;}
+.exp-body::before{content:'';position:absolute;left:-5px;top:6px;width:8px;height:8px;border-radius:50%;background:var(--color-background-secondary);border:2px solid var(--color-border-primary);}
+.exp-company{font-size:11px;font-weight:500;color:var(--color-text-tertiary);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:2px;}
+.exp-role{font-size:14.5px;font-weight:500;color:var(--color-text-primary);margin-bottom:2px;}
+.exp-project{font-size:12px;color:var(--color-text-info);margin-bottom:6px;font-style:italic;}
+.exp-bullets{padding-left:14px;margin-top:4px;}
+.exp-bullets li{font-size:12.5px;color:var(--color-text-secondary);line-height:1.6;margin-bottom:3px;}
+.edu-item{display:grid;grid-template-columns:100px 1fr;gap:0 1.25rem;margin-bottom:1rem;}
+.edu-year{font-size:11px;color:var(--color-text-tertiary);text-align:right;padding-top:2px;}
+.edu-body{border-left:2px solid var(--color-border-tertiary);padding-left:1rem;position:relative;}
+.edu-body::before{content:'';position:absolute;left:-5px;top:6px;width:8px;height:8px;border-radius:50%;background:var(--color-background-secondary);border:2px solid var(--color-border-primary);}
+.edu-degree{font-size:14px;font-weight:500;color:var(--color-text-primary);}
+.edu-school{font-size:12px;color:var(--color-text-secondary);margin-top:2px;}
+</style>
+
+<h2 class="sr-only">CV professionnel d'Amina Djellabi, Développeuse Web & Logiciel</h2>
+
+<div class="cv">
+  <div class="cv-grid">
+
+    <div class="sidebar">
+      <div class="name-block">
+        <div class="name">Amina<br>Djellabi</div>
+        <div class="divider"></div>
+        <div class="title">Développeuse Web &amp; Logiciel</div>
+      </div>
+
+      <div>
+        <div class="sec-label">Contact</div>
+        <div class="contact-item"><i class="ti ti-map-pin" aria-hidden="true"></i>Ouled Fayet, Alger, Algérie</div>
+        <div class="contact-item"><i class="ti ti-mail" aria-hidden="true"></i><a href="mailto:amina.djellabi21@outlook.fr">amina.djellabi21@outlook.fr</a></div>
+        <div class="contact-item"><i class="ti ti-phone" aria-hidden="true"></i>+213 697 725 953</div>
+        <div class="contact-item"><i class="ti ti-world" aria-hidden="true"></i><a href="https://amdje2023.github.io/Portfolio/index.html" target="_blank">Portfolio</a></div>
+        <div class="contact-item"><i class="ti ti-external-link" aria-hidden="true"></i><a href="https://easysystemdz.netlify.app/" target="_blank">easysystemdz.netlify.app</a></div>
+        <div class="contact-item"><i class="ti ti-car" aria-hidden="true"></i>Permis B</div>
+      </div>
+
+      <div>
+        <div class="sec-label">Langues</div>
+        <div class="lang-item"><div class="lang-name">Arabe</div><div class="lang-bar"><div class="lang-fill native"></div></div><div class="lang-level">Langue maternelle</div></div>
+        <div class="lang-item"><div class="lang-name">Français</div><div class="lang-bar"><div class="lang-fill native"></div></div><div class="lang-level">Langue maternelle</div></div>
+        <div class="lang-item"><div class="lang-name">Anglais</div><div class="lang-bar"><div class="lang-fill en"></div></div><div class="lang-level">Intermédiaire</div></div>
+      </div>
+
+      <div>
+        <div class="sec-label">Compétences techniques</div>
+        <div class="skill-group">
+          <div class="skill-group-name">Langages</div>
+          <div class="skill-tags">
+            <span class="tag">C#</span><span class="tag">JavaScript</span><span class="tag">PHP</span><span class="tag">HTML5</span><span class="tag">CSS3</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-name">Frameworks</div>
+          <div class="skill-tags">
+            <span class="tag">ASP.NET Core</span><span class="tag">Blazor</span><span class="tag">.NET MAUI</span><span class="tag">WebForms</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-name">Bases de données</div>
+          <div class="skill-tags">
+            <span class="tag">SQL Server</span><span class="tag">MySQL</span><span class="tag">PostgreSQL</span><span class="tag">MariaDB</span><span class="tag">Supabase</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-name">Outils &amp; CMS</div>
+          <div class="skill-tags">
+            <span class="tag">Visual Studio</span><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">Bootstrap</span><span class="tag">MudBlazor</span><span class="tag">Syncfusion</span><span class="tag">WordPress</span>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="sec-label">Centres d'intérêt</div>
+        <div class="interest-list">
+          <div class="interest-item"><i class="ti ti-run" aria-hidden="true"></i>Sports</div>
+          <div class="interest-item"><i class="ti ti-plane" aria-hidden="true"></i>Voyages</div>
+          <div class="interest-item"><i class="ti ti-book" aria-hidden="true"></i>Lecture</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+
+      <div>
+        <div class="main-section-title">Expériences professionnelles</div>
+
+        <div class="exp-item">
+          <div class="exp-date">Mai 2023 —<br>Aujourd'hui</div>
+          <div class="exp-body">
+            <div class="exp-company">Sarl KB Systems</div>
+            <div class="exp-role">Ingénieure en développement logiciel</div>
+            <div class="exp-project">Projet : ERP « FLOWGICS »</div>
+            <ul class="exp-bullets">
+              <li>Développement full stack d'un ERP complet (Blazor Server, .NET MAUI, ASP.NET Core)</li>
+              <li>Conception et intégration de modules métier : CRM, gestion des stocks, paiement et gestion documentaire</li>
+              <li>Optimisation des performances applicatives et amélioration de l'expérience utilisateur</li>
+              <li>Mise en place de bonnes pratiques de développement et participation aux revues de code</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-date">Juin 2022 —<br>Avr. 2023</div>
+          <div class="exp-body">
+            <div class="exp-company">Sarl Nafouz</div>
+            <div class="exp-role">Cheffe de projet informatique</div>
+            <div class="exp-project">Projet : Application e-learning « Nafouz.com »</div>
+            <ul class="exp-bullets">
+              <li>Recueil et analyse des besoins fonctionnels auprès des parties prenantes</li>
+              <li>Pilotage d'une équipe pluridisciplinaire (développeurs, motion designer, infographiste)</li>
+              <li>Animation de réunions de suivi, planification des sprints et définition des objectifs</li>
+              <li>Coordination des livrables et garantie du respect des délais et de la qualité</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="main-section-title">Formation</div>
+
+        <div class="edu-item">
+          <div class="edu-year">2022 — 2024</div>
+          <div class="edu-body">
+            <div class="edu-degree">Master 2 Professionnel — Conception et Administration de Bases de Données</div>
+            <div class="edu-school">CACI, Alger</div>
+          </div>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-year">2022</div>
+          <div class="edu-body">
+            <div class="edu-degree">Master 1 — Bases de Données</div>
+            <div class="edu-school">CACI, Alger</div>
+          </div>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-year">2016 — 2019</div>
+          <div class="edu-body">
+            <div class="edu-degree">Licence en Informatique</div>
+            <div class="edu-school">USTHB, Alger</div>
+          </div>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-year">2016</div>
+          <div class="edu-body">
+            <div class="edu-degree">Baccalauréat Scientifique</div>
+            <div class="edu-school">Lycée Saïd Limia</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="main-section-title">Atouts clés</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+          <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:0.85rem 1rem;">
+            <div style="font-size:13px;font-weight:500;color:var(--color-text-primary);margin-bottom:3px;">Développement full stack</div>
+            <div style="font-size:12px;color:var(--color-text-secondary);">Maîtrise de l'écosystème .NET de bout en bout</div>
+          </div>
+          <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:0.85rem 1rem;">
+            <div style="font-size:13px;font-weight:500;color:var(--color-text-primary);margin-bottom:3px;">Gestion de projet</div>
+            <div style="font-size:12px;color:var(--color-text-secondary);">Pilotage d'équipe et coordination de livrables</div>
+          </div>
+          <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:0.85rem 1rem;">
+            <div style="font-size:13px;font-weight:500;color:var(--color-text-primary);margin-bottom:3px;">Architecture BDD</div>
+            <div style="font-size:12px;color:var(--color-text-secondary);">Conception et optimisation de bases de données</div>
+          </div>
+          <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:0.85rem 1rem;">
+            <div style="font-size:13px;font-weight:500;color:var(--color-text-primary);margin-bottom:3px;">Expérience produit</div>
+            <div style="font-size:12px;color:var(--color-text-secondary);">ERP &amp; e-learning livrés en production</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
